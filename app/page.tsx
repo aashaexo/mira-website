@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, Sparkles } from "lucide-react"
+import Yappers from "./yappers/page"
 
 export default function HomePage() {
   return (
@@ -31,7 +32,7 @@ export default function HomePage() {
                   <ArrowRight className="w-5 h-5 text-blue-600 group-hover:translate-x-1 transition-transform" />
                 </div>
                 <div className="flex-1 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center bg-gray-50/50 group-hover:border-blue-300 transition-colors bg-[url('/mirayappers.png')] bg-cover bg-center">
-
+                  <Yappers person={person} />
                 </div>
               </CardContent>
             </Card>

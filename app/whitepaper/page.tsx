@@ -154,25 +154,6 @@ export default function WhitepaperPage() {
             </div>
           </div>
 
-          {/* Call to Action */}
-          <div className="text-center">
-            <Card className="bg-gradient-to-r from-purple-600 to-pink-600 border-0 shadow-2xl">
-              <CardContent className="p-8">
-                <Sparkles className="w-12 h-12 text-white mx-auto mb-4" />
-                <h2 className="text-3xl font-bold text-white mb-4">Ready to Dive Deeper?</h2>
-                <p className="text-purple-100 text-lg mb-6 max-w-2xl mx-auto">
-                  Download our comprehensive whitepaper and discover the technical innovation behind MIRA's ecosystem.
-                </p>
-                <Button
-                  size="lg"
-                  className="bg-white text-purple-600 hover:bg-purple-50 font-bold px-8 py-3 text-lg shadow-lg"
-                >
-                  <Download className="w-5 h-5 mr-2" />
-                  Download All Languages
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </div>
     </div>

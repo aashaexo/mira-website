@@ -5,6 +5,7 @@ import Image from "next/image"
 interface Community {
   name: string;
   url: string;
+  image: string;
   icon: string;
   platform: string;
 }
@@ -21,10 +22,13 @@ function CommunityCard({ community }: CommunityCardProps) {
   return (
     <Link href={community.url} target="_blank" rel="noopener noreferrer" className="block">
       <div className="bg-white rounded-2xl shadow-lg border border-gray-200/80 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1.5 h-full flex flex-col">
-        <div className="relative aspect-[2096/1154] bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-          <div className="text-8xl">
-            {community.icon}
-          </div>
+        <div className="relative aspect-[1500/600] bg-gradient-to-br from-gray-100 to-gray-200">
+          <Image
+            src={community.image}
+            alt={community.name}
+            fill
+            className="object-cover"
+          />
           <div className="absolute top-4 left-4">
             <span className="bg-black bg-opacity-70 text-white px-3 py-1 rounded-lg text-sm font-medium">Community</span>
           </div>
@@ -33,10 +37,10 @@ function CommunityCard({ community }: CommunityCardProps) {
         <div className="bg-black text-white p-6 flex-1 flex flex-col">
           <h3 className="text-xl font-bold mb-2">{titleSnippet}</h3>
 
-          <div className="flex items-center text-gray-300 text-sm mb-4">
+          {/* <div className="flex items-center text-gray-300 text-sm mb-4">
             <span className="mr-2">{community.icon}</span>
             <span>Join on {community.platform}</span>
-          </div>
+          </div> */}
 
           <div className="inline-flex items-center text-teal-400 hover:text-teal-300 font-medium transition-colors mt-auto">
             <span>Join Community</span>
@@ -51,35 +55,40 @@ function CommunityCard({ community }: CommunityCardProps) {
 export default function CommunityPage() {
   const communities: Community[] = [
     {
-      name: "Korea Telegram",
-      url: "https://t.me/mira_korea",
-      icon: "📱",
-      platform: "Telegram",
-    },
-    {
-      name: "Discord Server",
-      url: "https://discord.gg/mira",
-      icon: "🎮",
-      platform: "Discord",
-    },
-    {
       name: "Mira Citadel",
-      url: "https://x.com/mira_citadel",
+      url: "https://x.com/i/communities/1933115038644244535",
+      image: "/citadel.jpeg",
       icon: "🏰",
       platform: "X (Twitter)",
     },
     {
       name: "Mira Yappers",
-      url: "https://x.com/mira_yappers",
+      url: "https://x.com/i/communities/1932946062471254498",
+      image: "/yappers.jpeg",
       icon: "💬",
       platform: "X (Twitter)",
     },
     {
       name: "Mira Korea",
-      url: "https://x.com/mira_korea",
+      url: "https://x.com/i/communities/1923786875493548538",
+      image: "/korea.jpeg",
       icon: "🇰🇷",
       platform: "X (Twitter)",
     },
+    {
+      name: "Korea Telegram",
+      url: "",
+      image: "/telegram.jpeg",
+      icon: "📱",
+      platform: "Telegram",
+    },
+    {
+      name: "Discord Server",
+      url: "https://discord.com/invite/mira-network",
+      image: "/discord.png",
+      icon: "🎮",
+      platform: "Discord",
+    }
   ]
 
   return (

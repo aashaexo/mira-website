@@ -46,7 +46,7 @@ export default function HomePage() {
                   <h2 className="text-2xl font-bold text-gray-800">articles</h2>
                   <ArrowRight className="w-5 h-5 text-green-600 group-hover:translate-x-1 transition-transform" />
                 </div>
-                <div className="flex-1 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center bg-gray-50/50 group-hover:border-green-300 transition-colors bg-[url('/article.png')] bg-cover bg-center">
+                <div className="flex-1 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center bg-gray-50/50 group-hover:border-green-300 transition-colors bg-[url('/article2.png')] bg-cover bg-center">
 
                 </div>
               </CardContent>
@@ -55,20 +55,14 @@ export default function HomePage() {
 
           {/* Whitepaper */}
           <Link href="/whitepaper" className="group">
-            <Card className="h-72 border-2 border-gray-200 hover:border-purple-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-white to-purple-50/30">
+            <Card className="h-72 border-2 border-gray-200 hover:border-green-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-white to-green-50/30">
               <CardContent className="p-8 h-full flex flex-col">
                 <div className="flex items-center justify-between mb-6">
-                  <h2 className="text-2xl font-bold text-gray-800">Whitepaper</h2>
-                  <ArrowRight className="w-5 h-5 text-purple-600 group-hover:translate-x-1 transition-transform" />
+                  <h2 className="text-2xl font-bold text-gray-800">whitepaper</h2>
+                  <ArrowRight className="w-5 h-5 text-green-600 group-hover:translate-x-1 transition-transform" />
                 </div>
-                <div className="flex-1 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center bg-gray-50/50 group-hover:border-purple-300 transition-colors">
-                  <div className="text-center text-sm text-gray-600">
-                    <div className="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full mx-auto mb-3 flex items-center justify-center">
-                      <span className="text-purple-600 font-semibold">PDF</span>
-                    </div>
-                    <p className="font-medium">Click to access</p>
-                    <p>whitepaper documents</p>
-                  </div>
+                <div className="flex-1 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center bg-gray-50/50 group-hover:border-green-300 transition-colors bg-[url('/whitepaper1.jpg')] bg-cover bg-center">
+
                 </div>
               </CardContent>
             </Card>

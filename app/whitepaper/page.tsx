@@ -48,11 +48,6 @@ export default function WhitepaperPage() {
               </h1>
               <Globe className="w-8 h-8 text-pink-600 ml-3" />
             </div>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-4">Technical Documentation & Vision</p>
-            <p className="text-lg text-gray-500 max-w-3xl mx-auto">
-              Dive deep into MIRA's technical architecture, tokenomics, and roadmap. Our comprehensive whitepaper is
-              available in multiple languages to serve our global community.
-            </p>
             <div className="w-32 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto mt-6 rounded-full"></div>
           </div>
 
@@ -88,70 +83,6 @@ export default function WhitepaperPage() {
                 </CardContent>
               </Card>
             ))}
-          </div>
-
-          {/* Key Features */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">What's Inside</h2>
-            <div className="grid gap-6 md:grid-cols-2">
-              <Card className="border-2 border-gray-100 hover:border-purple-200 hover:shadow-lg transition-all">
-                <CardContent className="p-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <span className="text-purple-600 font-bold">🏗️</span>
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-lg text-gray-800 mb-2">Technical Architecture</h3>
-                      <p className="text-gray-600">
-                        Detailed explanation of MIRA's underlying technology and infrastructure
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-2 border-gray-100 hover:border-purple-200 hover:shadow-lg transition-all">
-                <CardContent className="p-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <span className="text-purple-600 font-bold">💰</span>
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-lg text-gray-800 mb-2">Tokenomics</h3>
-                      <p className="text-gray-600">Comprehensive breakdown of token distribution and economic model</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-2 border-gray-100 hover:border-purple-200 hover:shadow-lg transition-all">
-                <CardContent className="p-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <span className="text-purple-600 font-bold">🗺️</span>
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-lg text-gray-800 mb-2">Roadmap</h3>
-                      <p className="text-gray-600">Strategic milestones and development timeline for the future</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-2 border-gray-100 hover:border-purple-200 hover:shadow-lg transition-all">
-                <CardContent className="p-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <span className="text-purple-600 font-bold">🔬</span>
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-lg text-gray-800 mb-2">Research & Analysis</h3>
-                      <p className="text-gray-600">In-depth market research and competitive analysis</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
           </div>
 
         </div>

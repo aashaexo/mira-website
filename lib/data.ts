@@ -91,7 +91,7 @@ export const people: Person[] = [
   {
     id: "9",
     name: "Tebi",
-    profilePicture: "/tebi.png",
+    profilePicture: "/tebi.jpg",
     link: "https://x.com/rQ2ryD1Edndy7WX",
     category: "yappers"
   },
@@ -133,21 +133,21 @@ export const people: Person[] = [
   {
     id: "16",
     name: "Rejamong",
-    profilePicture: "/rejamong.png",
+    profilePicture: "/rejamong.jpg",
     link: "https://x.com/r2Jamong",
     category: "yappers"
   },
   {
     id: "17",
     name: "Charles",
-    profilePicture: "/charles.png",
+    profilePicture: "/charles.jpg",
     link: "https://x.com/charles48011843",
     category: "yappers"
   },
   {
     id: "18",
     name: "CryptoMama",
-    profilePicture: "/cryptomama.png",
+    profilePicture: "/cryptomama.jpg",
     link: "https://x.com/1Cryptomama",
     category: "yappers"
   },

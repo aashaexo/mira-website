@@ -126,8 +126,10 @@ export default function HomePage() {
 
         {/* Enhanced Footer */}
         <div className="text-center mt-20">
-          <div className="flex flex-col items-center gap-1 mt-4 text-gray-500 font-sans text-sm">
-            <span className="tracking-wide font-medium">Powered by <a href="https://twitter.com/aashatwt" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 underline underline-offset-2 transition-colors">Aasha</a></span>
+          <div className="flex flex-col items-center gap-1 mt-4">
+            <span className="inline-block px-4 py-1 rounded-full bg-pink-50 text-pink-600 font-sans font-bold text-base tracking-wide shadow-sm border border-pink-100">
+              Powered by <a href="https://twitter.com/aashatwt" target="_blank" rel="noopener noreferrer" className="hover:text-pink-700 underline underline-offset-2 transition-colors font-bold">Aasha</a> <span className="ml-1">💖</span>
+            </span>
           </div>
           <a
             href="https://scrolls.mira.network"

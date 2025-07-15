@@ -110,10 +110,17 @@ export const people: Person[] = [
     category: "yappers"
   },
   {
-    id: "13",
+    id: "12",
     name: "EWL",
     profilePicture: "/ewl.jpg",
     link: "https://x.com/jeg6322",
+    category: "yappers"
+  },
+  {
+    id: "13",
+    name: "Tryverse",
+    profilePicture: "/tryverse.jpg",
+    link: "https://x.com/TrycVerrse",
     category: "yappers"
   },
   {
@@ -123,5 +130,25 @@ export const people: Person[] = [
     link: "https://x.com/sleepy0x13",
     category: "yappers"
   },
-  
+  {
+    id: "16",
+    name: "Rejamong",
+    profilePicture: "/rejamong.png",
+    link: "https://x.com/r2Jamong",
+    category: "yappers"
+  },
+  {
+    id: "17",
+    name: "Charles",
+    profilePicture: "/charles.png",
+    link: "https://x.com/charles48011843",
+    category: "yappers"
+  },
+  {
+    id: "18",
+    name: "CryptoMama",
+    profilePicture: "/cryptomama.png",
+    link: "https://x.com/1Cryptomama",
+    category: "yappers"
+  },
 ]

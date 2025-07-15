@@ -4,6 +4,7 @@ export interface Person {
     bio?: string
     profilePicture?: string
     link?: string
+    category?: "team" | "yappers"
   }
   
   export interface Article {

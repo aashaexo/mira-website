@@ -14,7 +14,7 @@ interface CommunityCardProps {
   community: Community;
 }
 
-function CommunityCard({ community }: CommunityCardProps) {
+function CommunityCard({ community, label }: CommunityCardProps & { label: string }) {
   const titleSnippet = community.name.length > 30 
     ? `${community.name.substring(0, 30)}...` 
     : community.name;
@@ -30,7 +30,7 @@ function CommunityCard({ community }: CommunityCardProps) {
             className="object-cover"
           />
           <div className="absolute top-4 left-4">
-            <span className="bg-black bg-opacity-70 text-white px-3 py-1 rounded-lg text-sm font-medium">Community</span>
+            <span className="bg-black bg-opacity-70 text-white px-3 py-1 rounded-lg text-sm font-medium">{label}</span>
           </div>
         </div>
 
@@ -76,8 +76,8 @@ export default function CommunityPage() {
       platform: "X (Twitter)",
     },
     {
-      name: "Korea Telegram",
-      url: "",
+      name: "Mira China",
+      url: "https://x.com/MiraNetworkCN",
       image: "/telegram.jpeg",
       icon: "📱",
       platform: "Telegram",
@@ -109,7 +109,11 @@ export default function CommunityPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {communities.map((community, index) => (
-            <CommunityCard key={index} community={community} />
+            <CommunityCard
+              key={index}
+              community={community}
+              label={index < 3 ? "X Community" : " Communities"}
+            />
           ))}
         </div>
 

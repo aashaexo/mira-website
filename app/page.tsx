@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
-import { ArrowRight, Sparkles } from "lucide-react"
+import { ArrowRight, Sparkles, Twitter } from "lucide-react"
 import Yappers from "./yappers/page"
 
 export default function HomePage() {
@@ -11,12 +11,16 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-50/20 to-purple-50/20"></div>
         <div className="relative z-10">
           <div className="flex items-center justify-center mb-4">
-            <Sparkles className="w-8 h-8 text-blue-600 mr-3" />
-            <h1 className="text-7xl font-bold text-black tracking-wide">MIRA</h1>
-            <Sparkles className="w-8 h-8 text-purple-600 ml-3" />
+            
+            <img
+              src="/MiraLogo.png"
+              alt="Mira Logo"
+              className="mx-auto w-48 h-auto"
+            />
+            
           </div>
           <p className="text-xl text-gray-600 font-medium tracking-wide">THE REALM OF MIRA</p>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mt-4 rounded-full"></div>
+          
         </div>
       </header>
 
@@ -31,7 +35,7 @@ export default function HomePage() {
                   <h2 className="text-2xl font-bold text-gray-800">mira yappers</h2>
                   <ArrowRight className="w-5 h-5 text-blue-600 group-hover:translate-x-1 transition-transform" />
                 </div>
-                <div className="flex-1 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center bg-gray-50/50 group-hover:border-blue-300 transition-colors bg-[url('/mirayappers.png')] bg-cover bg-center">
+                <div className="flex-1 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center bg-gray-50/50 group-hover:border-blue-300 transition-colors bg-[url('/miranewyappers1.jpg')] bg-cover bg-center">
                   {/* <Yappers person={person} /> */}
                 </div>
               </CardContent>
@@ -71,14 +75,20 @@ export default function HomePage() {
           {/* Apps powered by Mira */}
           <Link href="/tools" className="group">
             <Card className="h-72 border-2 border-gray-200 hover:border-orange-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-white to-orange-50/30">
-              <CardContent className="p-8 h-full flex items-center justify-center text-center">
-                <div>
-                  <div className="w-20 h-20 bg-gradient-to-br from-orange-100 to-orange-200 rounded-full mx-auto mb-6 flex items-center justify-center">
-                    <span className="text-orange-600 font-bold text-lg">⚡</span>
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-800 mb-3">Apps powered by Mira</h2>
-                  <ArrowRight className="w-5 h-5 text-orange-600 mx-auto group-hover:translate-x-1 transition-transform" />
+              <CardContent className="p-8 h-full flex flex-col">
+                <div className="flex items-center justify-between mb-6">
+                  <h2 className="text-2xl font-bold text-gray-800">apps powered by mira</h2>
+                  <ArrowRight className="w-5 h-5 text-orange-600 group-hover:translate-x-1 transition-transform" />
                 </div>
+
+                <div className="flex-1 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center bg-gray-50/50 group-hover:border-green-300 transition-colors bg-[url('/appspowered.jpg')] bg-cover bg-center">
+
+                </div>
+                
+                
+                {/* <div className="w-full aspect-[2.5/1] border-2 border-dashed border-orange-300 rounded-lg overflow-hidden flex items-center justify-center bg-gray-50/50 group-hover:border-orange-400 transition-colors">
+                  <img src="/placeholder-logo.png" alt="Apps powered by Mira" className="object-cover w-full h-full" />
+                </div> */}
               </CardContent>
             </Card>
           </Link>
@@ -86,13 +96,13 @@ export default function HomePage() {
           {/* Podcast */}
           <Link href="/podcast" className="group">
             <Card className="h-72 border-2 border-gray-200 hover:border-red-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-white to-red-50/30">
-              <CardContent className="p-8 h-full flex items-center justify-center text-center">
-                <div>
-                  <div className="w-20 h-20 bg-gradient-to-br from-red-100 to-red-200 rounded-full mx-auto mb-6 flex items-center justify-center">
-                    <span className="text-red-600 font-bold text-lg">🎙️</span>
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-800 mb-3">Podcast</h2>
-                  <ArrowRight className="w-5 h-5 text-red-600 mx-auto group-hover:translate-x-1 transition-transform" />
+              <CardContent className="p-8 h-full flex flex-col">
+                <div className="flex items-center justify-between mb-6">
+                  <h2 className="text-2xl font-bold text-gray-800">podcast</h2>
+                  <ArrowRight className="w-5 h-5 text-red-600 group-hover:translate-x-1 transition-transform" />
+                </div>
+                <div className="flex-1 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center bg-gray-50/50 group-hover:border-green-300 transition-colors bg-[url('/apps1.jpg')] bg-cover bg-center">
+
                 </div>
               </CardContent>
             </Card>
@@ -101,13 +111,13 @@ export default function HomePage() {
           {/* Community */}
           <Link href="/community" className="group">
             <Card className="h-72 border-2 border-gray-200 hover:border-teal-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-white to-teal-50/30">
-              <CardContent className="p-8 h-full flex items-center justify-center text-center">
-                <div>
-                  <div className="w-20 h-20 bg-gradient-to-br from-teal-100 to-teal-200 rounded-full mx-auto mb-6 flex items-center justify-center">
-                    <span className="text-teal-600 font-bold text-lg">👥</span>
-                  </div>
-                  <h2 className="text-2xl font-bold text-gray-800 mb-3">Community</h2>
-                  <ArrowRight className="w-5 h-5 text-teal-600 mx-auto group-hover:translate-x-1 transition-transform" />
+              <CardContent className="p-8 h-full flex flex-col">
+                <div className="flex items-center justify-between mb-6">
+                  <h2 className="text-2xl font-bold text-gray-800">community</h2>
+                  <ArrowRight className="w-5 h-5 text-teal-600 group-hover:translate-x-1 transition-transform" />
+                </div>
+                <div className="flex-1 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center bg-gray-50/50 group-hover:border-green-300 transition-colors bg-[url('/apps.jpg')] bg-cover bg-center">
+
                 </div>
               </CardContent>
             </Card>
@@ -116,13 +126,17 @@ export default function HomePage() {
 
         {/* Enhanced Footer */}
         <div className="text-center mt-20">
+          <div className="flex flex-col items-center gap-1 mt-4 text-gray-500 font-sans text-sm">
+            <span className="tracking-wide font-medium">Powered by <a href="https://twitter.com/aashatwt" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 underline underline-offset-2 transition-colors">Aasha</a></span>
+          </div>
           <a
-            href="https://scrolls.mira.com"
+            href="https://scrolls.mira.network"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-600 hover:text-blue-600 transition-colors"
+            className="inline-flex items-center justify-center gap-1 mt-6 text-base font-sans font-semibold tracking-wide text-gray-800 hover:text-blue-700 transition-colors underline-offset-4 hover:underline"
           >
-            visit scroll.mira.com to know more
+            visit scroll.mira.network to know more
+            <ArrowRight className="w-4 h-4 mb-0.5" />
           </a>
         </div>
       </div>

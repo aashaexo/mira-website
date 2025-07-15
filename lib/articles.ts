@@ -28,12 +28,20 @@ export const articles = [
     image: "/article.png",
   },
   {
-    id: 6,
+    id: 3,
     title: "How Mira's Verification Technology Revolutionized Learnrite's Educational Testing Platform",
     description: "Across Asia, millions of students know the feeling all too well: sleepless nights, endless cups of coffee, and the crushing weight of exams that will determine their entire future. ",
     category: "Category",
     color: "pink",
     href: "https://x.com/Mira_Network/status/1928096779746300355",
     image: "/article7.png",
+  },
+  {
+    id: 4,
+    title: "What If AI Could Prove Itself? @Mira_Network Network Already Does.",
+    description: "We live in a time where most of the content we consume online is ai generated. But here’s the real question:",
+    color: "pink",
+    href: "https://x.com/Seymirel/status/1943977176434458738",
+    image: "/4article.jpg",
   },
 ];  

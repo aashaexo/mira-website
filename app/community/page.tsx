@@ -108,13 +108,27 @@ export default function CommunityPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {communities.map((community, index) => (
-            <CommunityCard
-              key={index}
-              community={community}
-              label={index < 3 ? "X Community" : " Communities"}
-            />
-          ))}
+          {communities.map((community, index) => {
+            let label = '';
+            if (community.name === 'Mira China') {
+              label = 'X';
+            } else if (community.platform === 'Telegram') {
+              label = 'Telegram';
+            } else if (community.platform === 'Discord') {
+              label = 'Discord';
+            } else if (community.platform === 'X (Twitter)') {
+              label = 'X Community';
+            } else {
+              label = 'Community';
+            }
+            return (
+              <CommunityCard
+                key={index}
+                community={community}
+                label={label}
+              />
+            );
+          })}
         </div>
 
         {communities.length === 0 && (

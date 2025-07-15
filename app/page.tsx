@@ -20,7 +20,12 @@ export default function HomePage() {
             
           </div>
           <p className="text-xl text-gray-600 font-medium tracking-wide">THE REALM OF MIRA</p>
-          
+          {/* Powered by aasha badge moved here */}
+          <div className="flex flex-col items-center gap-1 mt-4">
+            <span className="inline-block px-4 py-1 rounded-full bg-pink-50 text-pink-600 font-sans font-bold text-base tracking-wide shadow-sm border border-pink-100">
+              powered by <a href="https://twitter.com/aashatwt" target="_blank" rel="noopener noreferrer" className="hover:text-pink-700 underline underline-offset-2 transition-colors font-bold">aasha</a> <span className="ml-1">💖</span>
+            </span>
+          </div>
         </div>
       </header>
 
@@ -94,14 +99,14 @@ export default function HomePage() {
           </Link>
 
           {/* Podcast */}
-          <Link href="/podcast" className="group">
+          <Link href="/podcasts" className="group">
             <Card className="h-72 border-2 border-gray-200 hover:border-red-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-white to-red-50/30">
               <CardContent className="p-8 h-full flex flex-col">
                 <div className="flex items-center justify-between mb-6">
-                  <h2 className="text-2xl font-bold text-gray-800">podcast</h2>
+                  <h2 className="text-2xl font-bold text-gray-800">podcasts</h2>
                   <ArrowRight className="w-5 h-5 text-red-600 group-hover:translate-x-1 transition-transform" />
                 </div>
-                <div className="flex-1 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center bg-gray-50/50 group-hover:border-green-300 transition-colors bg-[url('/apps1.jpg')] bg-cover bg-center">
+                <div className="flex-1 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center bg-gray-50/50 group-hover:border-green-300 transition-colors bg-[url('/podcast12.png')] bg-cover bg-center">
 
                 </div>
               </CardContent>
@@ -126,11 +131,7 @@ export default function HomePage() {
 
         {/* Enhanced Footer */}
         <div className="text-center mt-20">
-          <div className="flex flex-col items-center gap-1 mt-4">
-            <span className="inline-block px-4 py-1 rounded-full bg-pink-50 text-pink-600 font-sans font-bold text-base tracking-wide shadow-sm border border-pink-100">
-              Powered by <a href="https://twitter.com/aashatwt" target="_blank" rel="noopener noreferrer" className="hover:text-pink-700 underline underline-offset-2 transition-colors font-bold">Aasha</a> <span className="ml-1">💖</span>
-            </span>
-          </div>
+          {/* Remove the old "Powered by Aasha" badge from here */}
           <a
             href="https://scrolls.mira.network"
             target="_blank"

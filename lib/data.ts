@@ -151,4 +151,11 @@ export const people: Person[] = [
     link: "https://x.com/1Cryptomama",
     category: "yappers"
   },
+  {
+    id: "19",
+    name: "Snowball",
+    profilePicture: "/snowball.jpg",
+    link: "https://x.com/one_snowball",
+    category: "yappers"
+  },
 ]

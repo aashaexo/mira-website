@@ -49,15 +49,6 @@ function WhitepaperCard({ whitepaper }: WhitepaperCardProps) {
             <Eye className="w-4 h-4 mr-2" />
             Read
           </Link>
-          <Link
-            href={whitepaper.externalLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-lg font-medium transition-colors flex items-center justify-center"
-          >
-            <ExternalLink className="w-4 h-4 mr-2" />
-            Open
-          </Link>
         </div>
       </div>
     </div>

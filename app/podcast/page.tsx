@@ -111,7 +111,7 @@ export default function PodcastPage() {
       badge: "Podcast",
     },
     {
-      name: "CrunchDAO Panel",
+      name: "IRL Live Panel",
       url: "https://youtu.be/IICxn-nIdiE?si=jVyiioR49aMRrL40",
       image: "/CrunchDAO.png",
       platform: "YouTube",

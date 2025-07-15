@@ -70,10 +70,10 @@ export default function CommunityPage() {
     },
     {
       name: "Mira Korea",
-      url: "https://x.com/i/communities/1923786875493548538",
+      url: "https://t.me/mirakorea",
       image: "/korea.jpeg",
       icon: "🇰🇷",
-      platform: "X (Twitter)",
+      platform: "Telegram",
     },
     {
       name: "Mira China",

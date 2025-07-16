@@ -111,11 +111,11 @@ export default function PodcastPage() {
       badge: "Podcast",
     },
     {
-      name: "IRL Live Panel",
+      name: "CrunchDAO Panel at EthCC",
       url: "https://youtu.be/IICxn-nIdiE?si=jVyiioR49aMRrL40",
       image: "/CrunchDAO.png",
       platform: "YouTube",
-      badge: "Podcast",
+      badge: "IRL Live Panel",
     },
     {
       name: "OpenAGI Summit",

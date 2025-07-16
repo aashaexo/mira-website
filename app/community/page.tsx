@@ -70,7 +70,7 @@ export default function CommunityPage() {
     },
     {
       name: "Mira Korea",
-      url: "https://t.me/mirakorea",
+      url: "https://t.me/mira_koreacommunity/1",
       image: "/korea.jpeg",
       icon: "🇰🇷",
       platform: "Telegram",
@@ -89,7 +89,13 @@ export default function CommunityPage() {
       icon: "🎮",
       platform: "Discord",
     }
-  ]
+    {
+      name: "Mira Korea",
+      url: "https://x.com/i/communities/1923786875493548538",
+      image: "/korea.jpeg",
+      icon: "🎮",
+      platform: "Community",
+    }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-teal-50/30 to-white">

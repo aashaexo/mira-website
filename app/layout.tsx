@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: 'Mira Network',
   description: 'Mira Network',
   generator: 'Mira Network',
+  icons: {
+    icon: '/favicon.png',
+  },
 }
 
 export default function RootLayout({

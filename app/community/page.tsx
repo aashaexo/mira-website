@@ -88,7 +88,7 @@ export default function CommunityPage() {
       image: "/discord.png",
       icon: "🎮",
       platform: "Discord",
-    }
+    },
     {
       name: "Mira Korea",
       url: "https://x.com/i/communities/1923786875493548538",
@@ -96,7 +96,7 @@ export default function CommunityPage() {
       icon: "🎮",
       platform: "Community",
     }
-
+  ]
   return (
     <div className="min-h-screen bg-gradient-to-br from-teal-50/30 to-white">
       <div className="container mx-auto px-4 py-16">
